@@ -1,0 +1,207 @@
+#header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    display:block;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#datasrc {
+    display:block;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#name {
+    display:block;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#library {
+    display:block;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#barchartsdiv {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#barchart1area {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barchart2area {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barchart1label {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#barchart2label {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.barchart1viz {
+    display: inline-block;
+}
+
+.barchart2viz {
+    display: inline-block;
+}
+
+#barchart3attrdiv {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#barchart3area {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barchart3label{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.barchart3viz {
+    display: inline-block;
+}
+
+#attrsdiv {
+    display:inline-block;
+    width:750px;
+    height:300px;
+}
+
+#attr1div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#attr2div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#attr1 {
+    margin-left: 10px;
+}
+
+#attr2 {
+    margin-left: 10px;
+}
+
+#choroplethsdiv {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+#states {
+    fill: #aaa;
+}
+
+#states .active {
+    display:none;
+}
+
+#state-borders {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.county-boundary {
+    fill: gray;
+    stroke: #fff;
+    stroke-width: .5px;
+}
+
+.county-boundary:hover, .state:hover {
+    fill: orange;
+}
+
+#tooltip {
+  position: absolute;
+  left: 42vw;
+  top: 1160px;
+  display: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  min-width: 160px;
+  color: #333;
+}
+.tooltip-title {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#tooltiph1 {
+    position: absolute;
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px;
+    color: #000000;
+}
+
+#tooltips1 {
+    position: absolute;
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px;
+    color: #000000;
+}

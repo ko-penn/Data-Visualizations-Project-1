@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3 Choropleth Map</title>
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Project 1</h1>
+        <h2 id="name">Kody Penn</h2>
+        <p id="datasrc">Data came from the US Heart and Stroke Atlas</p>
+        <p id="library">Libraries used: d3</p>
+    </div>
+
+    <div id="barchartsdiv">
+        <div id="barchart1area">
+            <label for="barchart1viz" id="barchart1label">Coronary heart disease percentage</label>
+            <div class="barchart1viz"></div>
+        </div>
+        <div id="barchart2area">
+            <label for="barchart2viz" id="barchart2label">High blood pressure percentage</label>
+            <div class="barchart2viz"></div>
+        </div>
+    </div>
+    <div id="tooltiph1"></div>
+    <div id="barchart3attrdiv">
+        <div id="barchart3area">
+            <label for="barchart3viz" id="barchart3label">Coronary heart disease percentage - High blood pressure percentage</label>
+            <div class="barchart3viz"></div>
+        </div>
+        <div id="attrsdiv">
+            <div id="attr1div">
+                <label for="attr1">Attribute 1</label>
+                <select name="attr1" id="attr1">
+                    <option value="poverty">Poverty percentage</option>
+                    <option value="income">Median household income</option>
+                    <option value="educationlths">Education less than high school percentage</option>
+                    <option value="air">Air quality</option>
+                    <option value="park">Park Access</option>
+                    <option value="inactive">Inactive percentage</option>
+                    <option value="smoking">Smoking percentage</option>
+                    <option value="urbanstatus" disabled>Urban rural status</option>
+                    <option value="elderly">Elderly percentage</option>
+                    <option value="hospitals">Number of hospitals</option>
+                    <option value="physicians">Number of primary care physicians</option>
+                    <option value="noinsurance">No health insurance percentage</option>
+                    <option value="bloodpressure">High blood pressure percentage</option>
+                    <option value="coronary" selected>Coronary heart disease percentage</option>
+                    <option value="stroke">Stroke percentage</option>
+                    <option value="cholesterol">High cholesterol percentage</option>
+                </select>
+            </div>
+            <div id="attr2div">
+                <label for="attr2">Attribute 2</label>
+                <select name="attr2" id="attr2">
+                    <option value="poverty">Poverty percentage</option>
+                    <option value="income">Median household income</option>
+                    <option value="educationlths">Education less than high school percentage</option>
+                    <option value="air">Air quality</option>
+                    <option value="park">Park Access</option>
+                    <option value="inactive">Inactive percentage</option>
+                    <option value="smoking">Smoking percentage</option>
+                    <option value="urban status" disabled>Urban rural status</option>
+                    <option value="elderly">Elderly percentage</option>
+                    <option value="hospitals">Number of hospitals</option>
+                    <option value="physicians">Number of primary care physicians</option>
+                    <option value="noinsurance">No health insurance percentage</option>
+                    <option value="bloodpressure" selected>High blood pressure percentage</option>
+                    <option value="coronary">Coronary heart disease percentage</option>
+                    <option value="stroke">Stroke percentage</option>
+                    <option value="cholesterol">High cholesterol percentage</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="tooltips1"></div>
+    <div id="choroplethsdiv">
+        <div class="choropleth1viz"></div>
+        <div id="tooltip"></div>
+        <div class="choropleth2viz"></div>
+    </div>
+
+    <svg height="5" width="5" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <pattern id="lightstripe" patternUnits="userSpaceOnUse" width="5" height="5"> <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==" x="0" y="0" width="5" height="5"> </image> </pattern> </defs></svg>
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="js/topojson.v3.js"></script>
+
+    
+    <!-- <script src="js/d3.v6.min.js"></script> -->
+    <!-- <script src="js/topojson.v3.js"></script> -->
+    <script src="js/barchart1.js"></script>
+    <script src="js/scatterplot3.js"></script>
+    <script src="js/choroplethMap1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
