@@ -71,7 +71,7 @@ document.getElementById("attr1").onchange = function(){
     let sel2 = document.getElementById("attr2");
     let text2 = sel2.options[sel2.selectedIndex].text;
     let element3 = document.getElementById("barchart3label");
-    element3.innerText = (text1 + ' - ' + text2);
+    element3.innerText = (text1 + ' vs ' + text2);
     barchart3.updateVis(document.getElementById("attr1").value, document.getElementById("attr2").value);
     choroplethMap1.updateVis(document.getElementById("attr1").value);
     choroplethMap2.updateVis(document.getElementById("attr2").value);
@@ -86,7 +86,7 @@ document.getElementById("attr2").onchange = function(){
   let element2 = document.getElementById("barchart2label");
   element2.innerText = text2;
   let element3 = document.getElementById("barchart3label");
-  element3.innerText = (text1 + ' - ' + text2);
+  element3.innerText = (text1 + ' vs ' + text2);
   barchart3.updateVis(document.getElementById("attr1").value, document.getElementById("attr2").value);
   choroplethMap1.updateVis(document.getElementById("attr1").value);
   choroplethMap2.updateVis(document.getElementById("attr2").value);
